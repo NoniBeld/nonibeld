@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 
 public class CuadroDeDialogo {
 
-	public static void Cuadrodialogo(String dilogo, String Titulo, int ancho, int alto, int posicionX, int posicionY, Color colorfondo, Color colorTexto, Color colorBorde, Font tipoLetra ) {
+	public static void Cuadrodialogo( String Titulo, String dilogo, int ancho, int alto, int posicionX, int posicionY, Color colorfondo, Color colorTexto, Color colorBorde, Font tipoLetra ) {
 		
 		//Creacion del panel.
 		
