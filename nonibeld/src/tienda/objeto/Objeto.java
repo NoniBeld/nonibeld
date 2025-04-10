@@ -2,13 +2,14 @@ package tienda.objeto;
 
 public class Objeto {
 
-	String nombre, descripcion;
+	String nombre,tipo, descripcion;
 	int cantidad;
 	double peso, precio;
 	
-	public Objeto(String nombre, String descripcion, double peso, double precio, int cantidad) {
+	public Objeto(String nombre,String tipo, String descripcion, double peso, double precio, int cantidad ) {
 		
 		this.nombre = nombre;
+		this.tipo = tipo;
 		this.descripcion = descripcion;
 		this.peso = peso;
 		this.precio = precio;
@@ -20,6 +21,9 @@ public class Objeto {
 		return nombre;
 	}
 	
+	public String retornaTipo(String tipo) {
+		return tipo;
+	}
 	public String retornaDescripcion(String descripcion) {
 		return descripcion;
 	}
@@ -33,6 +37,6 @@ public class Objeto {
 	}
 	
 	public String toString() {
-		return nombre + "\n " + descripcion + "("+ peso +" kg ) " + "$ " + precio  + " Cantidad " + cantidad ;
+		return nombre + "tipo de objeto: " + tipo + "("+ peso +" kg ) " + "$ " + precio  + " Cantidad " + cantidad +"\n" + descripcion  ;
 	}
 }

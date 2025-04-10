@@ -1,6 +1,6 @@
 package tienda;
 
-import tienda.estantes.Estante;
+import tienda.contenedores.Estante;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package tienda.estantes;
+package tienda.contenedores;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +31,7 @@ public class Estante {
 		case 2 -> EstanteArmas.add(objeto); 	
 		case 3 -> EstanteLibros.add(objeto);
 		case 4 -> EstanteComida.add(objeto);
-		default -> JOptionPane.showMessageDialog(null, "Ingresa un Objeto Valid");
+		default -> JOptionPane.showMessageDialog(null, "Ingresa un Objeto Valido");
 		
 		}
 		

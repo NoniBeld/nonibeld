@@ -1,7 +1,11 @@
 package tienda;
 
-import tienda.estantes.Estante;
+import tienda.contenedores.Estante;
+import tienda.objeto.Armas;
+import tienda.objeto.Comida;
+import tienda.objeto.Libro;
 import tienda.objeto.Objeto;
+import tienda.objeto.Pocion;
 
 public class Tienda {
 	
@@ -10,10 +14,10 @@ public class Tienda {
 		
 		Estante tienda = new Estante(); 
 		
-		Objeto espada = new Objeto("Espada ", "Espada Corta Hecha de metal", 1.300, 22, 1);
-		Objeto libro = new Objeto("Grimorio", "Este Grimorio Contiene el Conjurp Bola de Fuego", .500, 300,1);
-		Objeto pocion = new Objeto("Pocion", "Posion de Recuperacion menor", .100, 50, 1);
-		Objeto Pizza = new Objeto("Pizza", "Pizza de peperoni de las mas rica pizza del mundo", .500, 15, 1);
+		Objeto espada = new Armas("Espada ","arma" , "Espada Corta Hecha de metal", 1.300, 22, 1, 15);
+		Objeto pocion = new Pocion("Pocion","Pocion", "Posion de Recuperacion menor", 0.100, 50, 1,"curacion");
+		Objeto libro = new Libro("Grimorio", "Grimorio ","Este Grimorio Contiene el Conjurp Bola de Fuego", .500, 300,1, "Magica");
+		Objeto Pizza = new Comida("Pizza", "Comida ","Pizza de peperoni de las mas rica pizza del mundo", .500, 15, 1, true);
 		
 		
 		
@@ -26,5 +30,7 @@ public class Tienda {
 
 		return tienda;
 		}
+	
+	
 
 }

@@ -7,9 +7,8 @@ public class AguilaDorda extends Sujeto implements Elfo{
 
 
 	 AguilaDorda(String nombre){
-		
-		 nombre = "Aguila Dorada ";
 		 
+		 AguilaDorda as = new AguilaDorda("samius");
 		 
 		
 	}
